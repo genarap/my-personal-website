@@ -1,0 +1,50 @@
+#who {
+	margin: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1500px;
+	flex-wrap: wrap;
+}
+
+#profile-img {
+	/* cropping square image to circle */
+	background-position: center;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+#description {
+	text-align: justify-all;
+	max-width: 900px;
+	margin: auto;
+	padding: 5%;
+}
+
+#places {
+	background-color: #EDE4E0;
+}
+
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 5%;
+	flex-wrap: wrap;
+}
+
+.hobbies {
+	width: 300px;
+}
+
+.hobbies i {
+	font-size: 3rem;
+	color: #A84368;
+}
+
+.fi {
+	opacity: 0.6;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}

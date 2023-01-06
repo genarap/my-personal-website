@@ -1,0 +1,397 @@
+/* 
+Color scheme:
+#EDE4E0 light pink
+#C8DBBE light green
+#9F8772 light brown
+#665A48 brown
+#F9D38A yellow ball
+#F6DEB0 yellow clothing
+#A84368 red head
+#D9CCD1 cloud gray
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #665A48;
+	font-family: 'Trebuchet MS', sans-serif;
+	margin: 0;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+main {
+	background-color: #EDE4E0;
+}
+
+hr {
+	border: none;
+	border-top: 5px dotted #9F8772;
+	width: 5%;
+	margin: auto;
+}
+
+nav {
+	background-color: #C8DBBE;
+	padding: 0 5%;
+	display: flex;
+	justify-content: space-between;
+	/*sends each item to one edge */
+	align-items: center;
+	/*align items vertically*/
+}
+
+#menu {
+	display: flex;
+}
+
+nav a {
+	text-decoration: none;
+	color: #665A48;
+	padding: 5% 3%;
+	min-width: 150px;
+	text-align: end;
+}
+
+nav a:hover {
+	color: #EDE4E0;
+}
+
+#nav-hr {
+	border-top: 1px #665A48;
+	border-style: inset;
+	width: 100%;
+}
+
+
+/*Links in the main*/
+a {
+	color: #A84368;
+}
+
+a:hover {
+	color: #665A48;
+}
+
+h1 {
+	padding-top: 10%;
+	font-family: 'Great Vibes', serif;
+	font-size: 7rem;
+	margin: 0 3%;
+	font-weight: lighter;
+}
+
+h2 {
+	padding: 10% 0 5% 0;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 4rem;
+	margin: 0 3%;
+	font-weight: lighter;
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: lighter;
+	margin: 0;
+}
+
+p {
+	line-height: 2;
+}
+
+#iam {
+	background-color: #C8DBBE;
+	position: relative;
+
+}
+
+.definition {
+
+	margin: 8% 0;
+}
+
+
+.responsive {
+
+	max-width: 100%;
+	height: auto;
+}
+
+
+.cloud {
+	width: 250px;
+}
+
+#clouds > img:first-child {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+}
+
+#clouds > img:nth-child(2) {
+	position: absolute;
+	top: 40%;
+	left: 15%;
+}
+
+#clouds > img:nth-child(3) {
+	position: absolute;
+	top: 5%;
+	right: 10%;
+}
+
+#clouds > img:nth-child(4) {
+	position: absolute;
+	top: 40%;
+	right: 15%;
+}
+
+
+
+.lanes {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+/*	min-height: 600px;*/
+}
+
+.lanes-img {
+	margin: 5%;
+}
+
+#icon {
+	/* cropping square image to circle */
+	background-position: center;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.lanes-text {
+	margin: 5%;
+	line-height: 2;
+}
+
+#greetings p {
+	text-align: right;
+}
+
+#can-do-text{
+	text-align: left;
+}
+
+
+#contact p {
+	margin: 50px;
+}
+
+/*Skills Section*/
+
+#skills {
+	padding: 30px 5%;
+}
+
+table {
+	margin: auto;
+}
+
+td {
+	text-align: left;
+	height: 40px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column {
+	flex: 50%;
+}
+
+.form-row {
+	margin: 5px;
+}
+
+caption{
+	line-height: 3;
+	font-weight: 600;
+}
+
+#quote {
+	margin: 15% 0 5% 0;
+	font-family: 'Philosopher', sans-serif;
+}
+
+/*Get in touch Section*/
+
+input,
+textarea,
+select {
+	font-family: inherit;
+	text-align: left;
+	width: 400px;
+	padding: 5px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+label {
+	width: 200px;
+	text-align: right;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.btn {
+	padding: 3px;
+	border: px solid #665A48;
+	border-radius: 5px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100px;
+	margin: 20px auto 60px auto;
+	display: block;
+	background-color: white;
+	font-size: 1em;
+	color: #665A48;
+}
+
+.btn:hover {
+	background-color: #C8DBBE;
+}
+
+/*Footer Styling*/
+
+footer {
+	background-color: #C8DBBE;
+	margin: 0;
+	padding: 5% 3%;
+
+}
+
+footer a {
+	color: #665A48;
+	line-height: 2;
+	display: block;
+}
+
+footer a:hover {
+	color: #A84368;
+}
+
+.copyright {
+	color: white;
+}
+
+#banner {
+	background-color: #C8DBBE;
+	height: 100%;
+	padding: 5% 5% 1% 5%;
+	font-family: 'Philosopher', sans-serif;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other on screens that are smaller than 600 px */
+@media screen and (max-width: 600px) {
+
+	body {
+		font-size: 1.2rem;
+	}
+
+	h1 {
+		font-size: 5rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+	}
+
+	nav {
+		justify-content: space-between;
+	}
+
+	#menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: right;
+		margin: 0;
+	}
+
+
+	#clouds {
+		display: none;
+	}
+
+	.lanes {
+		flex-direction: column;
+		align-content: center;
+	}
+
+	.lanes-img {
+		padding: 5%;
+		order: 1;
+	}
+
+
+	#greetings p,
+	#can-do-text p{
+		text-align: left;
+	}
+
+	input,
+	textarea,
+	select {
+		width: 100%;
+	}
+
+	label {
+		width: 100%;
+		text-align: left;
+	}
+
+	footer {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 967px) and (min-width:601px) {
+
+	.cloud {
+		width: 150px;
+	}
+
+	#clouds > img:first-child {
+		position: absolute;
+		top: 3%;
+		left: 5%;
+	}
+
+	#clouds > img:nth-child(2) {
+		position: absolute;
+		top: 35%;
+		left: 10%;
+	}
+
+	#clouds > img:nth-child(3) {
+		position: absolute;
+		top: 5%;
+		right: 5%;
+	}
+
+	#clouds > img:nth-child(4) {
+		position: absolute;
+		top: 27%;
+		right: 10%;
+	}
+
+}
