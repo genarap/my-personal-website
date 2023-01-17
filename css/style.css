@@ -43,6 +43,33 @@ nav {
 	/*align items vertically*/
 }
 
+h1 {
+	padding-top: 10%;
+	font-family: 'Great Vibes', serif;
+	font-size: 7rem;
+	margin: 0 3%;
+	font-weight: lighter;
+}
+
+h2 {
+	padding: 5% 0;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 4rem;
+	margin: 0 3%;
+	font-weight: lighter;
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: lighter;
+	margin: 0;
+}
+
+p {
+	line-height: 2;
+}
+
+
 #menu {
 	display: flex;
 }
@@ -73,32 +100,6 @@ a {
 
 a:hover {
 	color: #665A48;
-}
-
-h1 {
-	padding-top: 10%;
-	font-family: 'Great Vibes', serif;
-	font-size: 7rem;
-	margin: 0 3%;
-	font-weight: lighter;
-}
-
-h2 {
-	padding: 10% 0 5% 0;
-	font-family: 'Philosopher', sans-serif;
-	font-size: 4rem;
-	margin: 0 3%;
-	font-weight: lighter;
-}
-
-h3 {
-	font-size: 1.5rem;
-	font-weight: lighter;
-	margin: 0;
-}
-
-p {
-	line-height: 2;
 }
 
 #iam {
@@ -212,10 +213,6 @@ td {
 	flex: 50%;
 }
 
-.form-row {
-	margin: 5px;
-}
-
 caption{
 	line-height: 3;
 	font-weight: 600;
@@ -228,34 +225,12 @@ caption{
 
 /*Get in touch Section*/
 
-input,
-textarea,
-select {
-	font-family: inherit;
-	text-align: left;
-	width: 400px;
-	padding: 5px;
-	vertical-align: middle;
-	display: inline-block;
-}
-
-label {
-	width: 200px;
-	text-align: right;
-	padding: 5px;
-	display: inline-block;
-	vertical-align: top;
-}
-
-
 .btn {
-	padding: 3px;
-	border: px solid #665A48;
-	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid #665A48;
+	border-radius: 28px;
 	text-align: center;
-	border-radius: 5px;
 	cursor: pointer;
-	width: 100px;
 	margin: 20px auto 60px auto;
 	display: block;
 	background-color: white;
@@ -327,7 +302,6 @@ footer a:hover {
 		margin: 0;
 	}
 
-
 	#clouds {
 		display: none;
 	}
@@ -348,16 +322,7 @@ footer a:hover {
 		text-align: left;
 	}
 
-	input,
-	textarea,
-	select {
-		width: 100%;
-	}
 
-	label {
-		width: 100%;
-		text-align: left;
-	}
 
 	footer {
 		font-size: 0.9rem;

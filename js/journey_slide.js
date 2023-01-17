@@ -16,6 +16,22 @@ function showSlides(n) {
 	let i;
 	let slides = document.getElementsByClassName("mySlides");
 	let dots = document.getElementsByClassName("dot");
+	let prevArrow = document.getElementsByClassName("prev");
+	let nextArrow = document.getElementsByClassName("next");
+	
+	//Disable arrows for first and last slide
+	if(n==1){
+		prevArrow[0].className += " isDisabled";
+	}
+	else if(n==5){
+		nextArrow[0].className += " isDisabled";
+	}
+	else{
+		prevArrow[0].classList.remove("isDisabled");
+		nextArrow[0].classList.remove("isDisabled");
+	}
+	
+	
 	if (n > slides.length) {
 		slideIndex = 1
 	}
