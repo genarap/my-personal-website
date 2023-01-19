@@ -202,6 +202,11 @@ table {
 td {
 	text-align: left;
 	height: 40px;
+	padding: 0 5px;
+}
+
+td:nth-child(2){
+	text-align: right;
 }
 
 .row {
@@ -316,13 +321,14 @@ footer a:hover {
 		order: 1;
 	}
 
-
 	#greetings p,
 	#can-do-text p{
 		text-align: left;
 	}
-
-
+	
+	table{
+		width: 100%;
+	}
 
 	footer {
 		font-size: 0.9rem;
