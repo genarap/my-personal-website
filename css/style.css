@@ -24,6 +24,7 @@ body {
 
 main {
 	background-color: #EDE4E0;
+	padding: 0 5%;
 }
 
 hr {
@@ -31,16 +32,6 @@ hr {
 	border-top: 5px dotted #9F8772;
 	width: 5%;
 	margin: auto;
-}
-
-nav {
-	background-color: #C8DBBE;
-	padding: 0 5%;
-	display: flex;
-	justify-content: space-between;
-	/*sends each item to one edge */
-	align-items: center;
-	/*align items vertically*/
 }
 
 h1 {
@@ -69,9 +60,16 @@ p {
 	line-height: 2;
 }
 
+/*navigation bar style*/
 
-#menu {
+nav {
+	background-color: #C8DBBE;
+	padding: 0 5%;
 	display: flex;
+	justify-content: space-between;
+	/*sends each item to one edge */
+	align-items: center;
+	/*align items vertically*/
 }
 
 nav a {
@@ -92,6 +90,10 @@ nav a:hover {
 	width: 100%;
 }
 
+#menu {
+	display: flex;
+}
+
 
 /*Links in the main*/
 a {
@@ -102,24 +104,25 @@ a:hover {
 	color: #665A48;
 }
 
+/* I am section*/
+
 #iam {
 	background-color: #C8DBBE;
 	position: relative;
-
 }
 
 .definition {
-
 	margin: 8% 0;
 }
 
-
 .responsive {
-
 	max-width: 100%;
 	height: auto;
 }
 
+#cover-img {
+	margin-bottom: 5%;
+}
 
 .cloud {
 	width: 250px;
@@ -149,19 +152,23 @@ a:hover {
 	right: 15%;
 }
 
+/*Lanes Section*/
 
+.sections{
+	padding:10% 0;
+}
 
 .lanes {
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
 	align-items: center;
-	justify-content:space-between;
-/*	min-height: 600px;*/
+	justify-content: space-between;
 }
 
-.lanes-img {
-	margin: 5%;
+.img-float {
+	float: left;
+	margin-right: 5%;
 }
 
 #icon {
@@ -174,16 +181,12 @@ a:hover {
 .lanes-text {
 	margin: 5%;
 	line-height: 2;
+	text-align: left;
 }
 
 #greetings p {
 	text-align: right;
 }
-
-#can-do-text{
-	text-align: left;
-}
-
 
 #contact p {
 	margin: 50px;
@@ -191,12 +194,9 @@ a:hover {
 
 /*Skills Section*/
 
-#skills {
-	padding: 30px 5%;
-}
-
 table {
 	margin: auto;
+	width: 400px;
 }
 
 td {
@@ -205,7 +205,7 @@ td {
 	padding: 0 5px;
 }
 
-td:nth-child(2){
+td:nth-child(2) {
 	text-align: right;
 }
 
@@ -218,7 +218,7 @@ td:nth-child(2){
 	flex: 50%;
 }
 
-caption{
+caption {
 	line-height: 3;
 	font-weight: 600;
 }
@@ -277,7 +277,8 @@ footer a:hover {
 	font-family: 'Philosopher', sans-serif;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other on screens that are smaller than 600 px */
+/*Responsive layout  */
+
 @media screen and (max-width: 600px) {
 
 	body {
@@ -317,16 +318,23 @@ footer a:hover {
 	}
 
 	.lanes-img {
-		padding: 5%;
+		padding: 10%;
 		order: 1;
 	}
 
-	#greetings p,
-	#can-do-text p{
+	.lanes-text {
 		text-align: left;
 	}
-	
-	table{
+
+	#greetings p {
+		text-align: center;
+	}
+
+	.img-float {
+		float:none;
+	}
+
+	table {
 		width: 100%;
 	}
 
@@ -364,5 +372,4 @@ footer a:hover {
 		top: 27%;
 		right: 10%;
 	}
-
 }
